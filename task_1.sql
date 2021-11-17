@@ -1,7 +1,7 @@
 SELECT 
     e.first_name || ' ' || E.last_name AS emp_name,
-    e.salary,
-    e.job_id,
+    e.salary as emp_salary,
+    e.job_id as emp_job,
     m.first_name || ' ' || M.last_name AS manager,
     m.job_id as manager_job,
     m.salary as manager_salary
