@@ -14,7 +14,7 @@ from (
                 on e.department_id=d.department_id
     GROUP BY d.department_id
 ) subquery
-right join EMPLOYEES e2
+left join EMPLOYEES e2
 on e2.DEPARTMENT_ID=subquery.dep_id
 
 left join departments d2
